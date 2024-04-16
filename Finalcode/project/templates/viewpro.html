@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, Monsterlite admin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, Monster admin lite design, Monster admin lite dashboard bootstrap 5 dashboard template">
+    <meta name="description"
+        content="Monster Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Smart Cosmetics suggestion System</title>
+    <link rel="canonical" href="https://www.wrappixel.com/templates/monster-admin-lite/" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/assets/images/favicon.png">
+    <!-- Custom CSS -->
+    <link href="../static/assets/plugins/chartist/dist/chartist.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../static/css/style.min.css" rel="stylesheet">
+    <link href="../static/css/plugin.css" rel="stylesheet">
+    <style>
+        .contact-form {
+            padding: 1.875rem;
+            background: #fafafa;
+            margin-bottom: 1.875rem;
+            border: 1px solid #ebebeb;
+            border-radius: 2px;
+        }
+
+        .contact-form__rate {
+            margin-bottom: 0;
+        }
+
+        .contact-form__rate-bx {
+            display: inline-block;
+            margin-right: 0.5rem;
+            font-size: 18px;
+            color: #cccccc;
+        }
+
+        .contact-form__rate-bx i {
+            cursor: pointer;
+        }
+
+        .contact-form__rate-bx-show {
+            display: inline-block;
+            color: #999999;
+            font-weight: 300;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-form__upload-btn {
+            text-align: right;
+            position: relative;
+        }
+
+        .contact-form__input-file {
+            display: inline-block;
+            width: 136px;
+            opacity: 0;
+            position: relative;
+            z-index: 2;
+            cursor: pointer;
+        }
+
+        .contact-form__upload-btn span {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 9px 20px;
+            color: #666;
+            font-size: 13px;
+            font-weight: 200;
+            border: 1px solid #cccccc;
+            border-radius: 1.25rem;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .contact-form__upload-btn span i {
+            font-size: 1rem;
+            float: left;
+            margin-right: 0.25rem;
+            margin-top: 0.125rem;
+        }
+
+        .contact-form__rate-bx i.active,
+        .contact-form__rate-bx i.selected {
+            color: #FFC600;
+        }
+
+        .contact-form__input-text,
+        .contact-form__textarea {
+            display: block;
+            width: 100%;
+            padding: 0.625rem 1.25rem;
+            color: #000;
+            font-size: 0.9375rem;
+            font-weight: 300;
+            background: #ffffff;
+            outline: none;
+            border: 1px solid #dddddd;
+            margin: 0 0 1.875rem;
+            border-radius: 2px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.02);
+            transition: all 0.2s ease-in-out;
+        }
+
+        .ion-ios-star:before {
+            content: "\f4b3"
+        }
+
+        .ion-ios-star-half:before {
+            content: "\f4b1"
+        }
+
+        .ion-ios-star-outline:before {
+            content: "\f4b2"
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar" data-navbarbg="skin6">
+            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                <div class="navbar-header" data-logobg="skin6">
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <a class="navbar-brand" href="/index">
+                        <!-- Logo icon -->
+
+                        <!--End Logo icon -->
+                        <!-- Logo text -->
+
+                        <img src="../static/assets/images/fff.png" alt="homepage" class="small-inline-image" />
+
+                    </a>
+                    <!-- ============================================================== -->
+                    <!-- End Logo -->
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <a class="nav-toggler waves-effect waves-light text-dark d-block d-md-none"
+                        href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
+
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav me-auto mt-md-0 ">
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+
+                        <li class="nav-item hidden-sm-down">
+                            <form class="app-search ps-3">
+                                <input type="text" class="form-control" placeholder="Search for..."> <a
+                                    class="srh-btn"><i class="ti-search"></i></a>
+                            </form>
+                        </li>
+                    </ul>
+
+                    <!-- ============================================================== -->
+                    <!-- Right side toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav">
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../{{img}}" alt="user" class="profile-pic me-2">{{username}}
+                            </a>
+                            <ul class="dropdown-menu show" aria-labelledby="navbarDropdown"></ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar" data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+
+
+                        <li class="text-center p-20 upgrade-btn">
+                            <a href="/index" class="btn btn-danger text-white mt-2">Back To Home</a>
+                        </li>
+                    </ul>
+
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+
+        <div class="page-wrapper">
+
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+
+
+                <!-- ============================================================== -->
+                <!-- Sales chart -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <!-- column -->
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">{{row[1]}}</h4>
+                                <div class="flot-chart">
+                                    <img class="card-img-top img-responsive" src="../{{row[6]}}"
+                                        alt="Card">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- column -->
+                </div>
+                <!-- ============================================================== -->
+                <div class="row">
+                    <!-- Column -->
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">PRODUCT PRICE</h4>
+                                <div class="text-end">
+                                    <h2 class="font-light mb-0"><i class="ti-arrow-up text-success"></i> ${{row[2]}}</h2>
+                                    <span class="text-muted">{{row[1]}}</span>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <!-- Column -->
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">PRODUCT SKIN-TYPE</h4>
+                                <div class="text-end">
+                                    <h2 class="font-light mb-0"><i class="ti-arrow-up text-info"></i>{{row[4]}}</h2>
+                                    <span class="text-muted">{{row[5]}} Pcs</span>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                </div>
+
+                <div class="row">
+                    <!-- column -->
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">{{row[3]}} </h4>
+                                <form class="contact-form" action="/Review" method="POST" enctype="multipart/form-data">
+
+                                    <div class="mb-3">
+                                        <div class="mb-2 w-100">
+                                            <label class="text-muted" for="password">PRODUCT NAME</label>
+
+                                        </div>
+                                        <input id="file" type="text" value="{{row[1]}}"
+                                            class="form-control" name="productname" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="mb-2 w-100">
+                                            <label class="text-muted" for="password">PRODUCT DESCRIPTION</label>
+
+                                        </div>
+                                        <input id="file" type="text" placeholder="Enter description"
+                                            class="form-control"name="comment" required>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <div class="mb-2 w-100">
+                                            <label class="text-muted" for="password">PRODUCT RATINGS</label>
+
+                                        </div>
+                                        <div class="col-md-6 col-sm-7 col-12">
+                                            <p class="contact-form__rate">
+                                                Your rating for this listing:
+                                            </p>
+                                            <p class="contact-form__rate-bx">
+                                                <i class="ion-ios-star"></i>
+                                                <i class="ion-ios-star"></i>
+                                                <i class="ion-ios-star"></i>
+                                                <i class="ion-ios-star"></i>
+                                                <i class="ion-ios-star"></i>
+                                            </p>
+                                            
+                                            <input type="hidden" id="rating" name="rating">
+                                            <input type="hidden" id="productid" name="productid" value="{{row[0]}}" >
+                                            <input type="hidden" id="producttype" name="producttype" value="{{row[4]}}" >
+                                            
+
+                                            <p class="contact-form__rate-bx-show">
+                                                <span class="rate-actual">0</span> / 5
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="d-flex align-items-center">
+
+                                        <input class="btn v1 btn-primary ms-auto" type="submit"  value="Submit">
+
+                                        <!-- <button id="btnSubmit" class="btn btn-primary ms-auto">
+                                            SUBMIT
+                                        </button> -->
+                                    </div>
+                                </form>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               
+
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-md-flex">
+                                    <h4 class="card-title col-md-10 mb-md-0 mb-3 align-self-center">product Reviews</h4>
+                                    
+                                </div>
+                                <br>
+                                <ul class="navbar-nav me-auto mt-md-0 ">
+                                    
+                                    <li class="nav-item hidden-sm-down">
+                                        <form class="app-search ps-3">
+                                            <input type="text" class="form-control" placeholder="Search for..."> <a
+                                                class="srh-btn"><i class="ti-search"></i></a>
+                                        </form>
+                                    </li>
+                                </ul>
+                                <div class="table-responsive mt-5">
+                                    <table class="table stylish-table no-wrap">
+                                        <thead>
+                                            <tr>
+                                                <th class="border-top-0" colspan="2">USERNAME</th>
+                                                <th class="border-top-0">COMMENTS</th>
+                                                <th class="border-top-0">RATINGS</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {% for i in reviews %}
+                                            <tr>
+                                                <td style="width: 10px;">
+                                                    <span >
+                                                        <img  class="round" src="../{{i[5]}}" alt="Image Description">
+                                                    </span>
+                                                </td>
+                                                
+
+                                                <td class="align-middle">
+                                                    <h6>{{i[4]}}</h6><small class="text-muted">{{i[1]}}</small>
+                                                </td>
+                                                <td class="align-middle"><small class="text-muted">{{i[3]}}</small></td>
+                                                <td class="align-middle"><div class="customer-rating">{{i[8]}}.0</div></td>
+                                            </tr>
+                                            {% endfor %}
+                                
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+
+
+                <!-- ============================================================== -->
+                <!-- Recent blogss -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer text-center">
+                © 2021 Monster Admin by <a href="#">wrappixel.com</a>
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+
+    <script>
+        const stars = document.querySelectorAll('.ion-ios-star');
+        const ratingInput = document.getElementById('rating');
+
+        stars.forEach((star, index) => {
+            star.addEventListener('click', () => {
+                ratingInput.value = index + 1;
+                updateStarDisplay(index + 1);
+            });
+        });
+
+        function updateStarDisplay(rating) {
+            stars.forEach((star, index) => {
+                star.classList.toggle('active', index < rating);
+            });
+        }
+    </script>
+    <!-- ============================================================== -->
+    <script>
+        document.querySelector('.contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
+    
+            var formData = new FormData(this);
+    
+            fetch('/Review', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                alert(data); 
+                window.location.href = "/index";// Show the returned message in an alert
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+    </script>
+
+
+    <script src="../static/assets/plugins/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../static/assets/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/js/app-style-switcher.js"></script>
+    <!--Wave Effects -->
+    <script src="../static/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="../static/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../static/js/custom.js"></script>
+    <!--This page JavaScript -->
+    <!--flot chart-->
+    <script src="../static/assets/plugins/flot/jquery.flot.js"></script>
+    <script src="../static/assets/plugins/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+    <script src="../static/js/pages/dashboards/dashboard1.js"></script>
+</body>
+
+</html>

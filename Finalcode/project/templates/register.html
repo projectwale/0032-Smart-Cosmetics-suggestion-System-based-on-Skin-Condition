@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, Monsterlite admin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, Monster admin lite design, Monster admin lite dashboard bootstrap 5 dashboard template">
+    <meta name="description"
+        content="Monster Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Smart Cosmetics suggestion System</title>
+    <link rel="canonical" href="https://www.wrappixel.com/templates/monster-admin-lite/" />
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/assets/images/favicon.png">
+    <!-- Custom CSS -->
+    <link href="../static/assets/plugins/chartist/dist/chartist.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../static/css/style.min.css" rel="stylesheet">
+    <script src="../static/js/jquery-3.3.1.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar" data-navbarbg="skin6">
+            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                <div class="navbar-header" data-logobg="skin6">
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon -->
+
+                        <!--End Logo icon -->
+                        <!-- Logo text -->
+
+                        <img src="../static/assets/images/fff.png" alt="homepage" class="small-inline-image" />
+
+                    </a>
+                    <!-- ============================================================== -->
+                    <!-- End Logo -->
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <a class="nav-toggler waves-effect waves-light text-dark d-block d-md-none"
+                        href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar" data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <!-- User Profile-->
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/"
+                                aria-expanded="false"><i class="me-3 far fa-clock fa-fw" aria-hidden="true"></i><span
+                                    class="hide-menu">HOME</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="/register" aria-expanded="false">
+                                <i class="me-3 fa fa-user" aria-hidden="true"></i><span
+                                    class="hide-menu">REGISTER</span></a>
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="/adminlogin" aria-expanded="false"><i class="me-3 fa fa-table"
+                                    aria-hidden="true"></i><span class="hide-menu">ADMIN</span></a></li>
+
+
+                    </ul>
+
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+
+            <section class="h-100">
+                <div class="container h-100">
+                    <div class="row justify-content-sm-center h-100">
+                        <div class="col-xxl-6 col-xl-5 col-lg-9 col-md-9 col-sm-14">
+                            <div class="text-center my-5">
+
+                            </div>
+                            <div class="card shadow-lg">
+                                <div class="card-body p-5">
+                                    <h1 class="fs-4 card-title fw-bold mb-4">USER REGISTER</h1>
+                                    <form id="fileUploadForm" enctype="multipart/form-data">
+                                       
+                                        <div class="mb-3">
+                                            <div class="mb-2 w-100">
+                                                <label class="text-muted" for="Username">Username</label>
+                                            </div>
+                                            <input id="Username" type="text" placeholder="Enter Name" class="form-control" name="Username"
+                                                required>
+                                            
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="mb-2 text-muted" for="email">E-Mail Address</label>
+                                            <input id="email" type="email" placeholder="Enter E-Mail" class="form-control" name="email" 
+                                                required>
+                                        
+                                        </div>
+
+                                       
+                                        
+                                        <div class="mb-3">
+                                            <div class="mb-2 w-100">
+                                                <label class="text-muted" for="Mobile">Mobile</label>
+
+                                            </div>
+                                            <input id="Mobile" type="number" class="form-control" pattern="[0-9]{10}" placeholder="Enter mobile no" name="Mobile"
+                                                required>
+                                                <small>Enter a 10-digit mobile number.</small>
+                                            
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="mb-2 w-100">
+                                                <label class="text-muted" for="Username">Password</label>
+
+                                            </div>
+                                            <input id="Password" type="text" class="form-control"  placeholder="Enter your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="Password"
+                                                required>
+                                                <small>Password must contain at least 8 characters, including one uppercase letter, one lowercase letter, and one digit.</small>
+                                            
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <div class="mb-2 w-100">
+                                                <label class="text-muted" for="file">Upload Image</label>
+
+                                            </div>
+                                            <input id="file" type="file" class="form-control" name="file" required>
+                                           
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="mb-2 w-100">
+                                                <label class="text-muted" for="Address">Address</label>
+
+                                            </div>
+                                            <input id="Address" type="text" placeholder="Enter Address" class="form-control" name="Address"
+                                                required>
+                                           
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="mb-2 w-100">
+                                                <label class="text-muted" for="Pancard">Pan Card No</label>
+
+                                            </div>
+                                            <input id="Pancard" type="number" pattern="[0-9]{12}" placeholder="Enter Pan Card No"  class="form-control" name="Pancard"
+                                                required>
+                                                <small>Enter a 12-digit Pan Card  number.</small>
+                                            
+                                        </div>
+
+                                        <div class="d-flex align-items-center">
+                                            
+                                            <button id="btnSubmit" class="btn btn-primary ms-auto">
+                                                Register
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="card-footer py-3 border-0">
+                                    <div class="text-center">
+                                        You have an account? <a href="/" class="text-dark">Log In</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <script>
+                $(document).ready(function () {
+
+                    $("#btnSubmit").click(function (event) {
+                        event.preventDefault();
+                        var form = $('#fileUploadForm')[0];
+                        var data = new FormData(form);
+                        console.log(data)
+                        $.ajax({
+                            type: 'POST',
+                            enctype: 'multipart/form-data',
+                            url: "register1",
+                            data: data,
+                            processData: false,
+                            contentType: false,
+                            cache: false,
+                            timeout: 600000,
+                            success: function (response) {
+
+                                Swal.fire({
+                                    title: 'Success!',
+                                    text: response.message,
+                                    icon: 'success',
+                                    confirmButtonText: 'Okay'
+                                }).then((result) => {
+                                    // Check if the "Okay" button was clicked
+                                    if (result.isConfirmed) {
+                                        // Redirect to a new URL
+                                        window.location.href = '/'; // Replace with the desired URL
+                                    }
+                                });
+                               
+                            },
+                            error: function (e) {
+                                console.log("ERROR : ", e);
+                                $("#btnSubmit").prop("disabled", false);
+                            }
+                        });
+                    });
+                });
+            </script>
+            
+
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer text-center">
+                © 2023 Monster Admin by <a href="/">Smart Cosmetics suggestion System based on Skin Condition</a>
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+   
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../static/assets/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/js/app-style-switcher.js"></script>
+    <!--Wave Effects -->
+    <script src="../static/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="../static/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../static/js/custom.js"></script>
+    <!--This page JavaScript -->
+    <!--flot chart-->
+    <script src="../static/assets/plugins/flot/jquery.flot.js"></script>
+    <script src="../static/assets/plugins/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+    <script src="../static/js/pages/dashboards/dashboard1.js"></script>
+</body>
+
+</html>
